@@ -1,12 +1,8 @@
 <?php
 
+use App\Http\Controllers\CharacterController;
 use Illuminate\Support\Facades\Route;
 
-Route:: get('/', function () {
-    return view('home');
-    
-});
 
-Route:: get('/hello', function () {   
-      return 'Hello World'; 
-    });
+Route::get('/', [CharacterController::class, 'index']);
+Route::get('/chars', [CharacterController::class, 'characters']);
