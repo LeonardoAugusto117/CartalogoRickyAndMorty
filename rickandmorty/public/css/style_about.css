@@ -1,0 +1,82 @@
+body{
+    background-color:#E6E6E6 !important ;
+}
+
+.header {
+    background-color: #38589D;
+    padding: 10px 20px;
+    color: white;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    font-size: 1.5em;
+    text-decoration: none;
+    color: white;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    margin-left: 15px;
+    font-size: 1em;
+}
+
+.content {
+    padding: 20px;
+}
+
+.about-me, .resume, .projects {
+    margin-bottom: 20px;
+}
+
+h1, h2 {
+    color: #38589D;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    color: #4a90e2;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.border-custom {
+
+    border: 2px solid #38589D;
+}
+
+.img-logo {
+    width: 50px; /* Ajuste o tamanho conforme necessário */
+    height: 50px;
+    border-radius: 50%; /* Torna a imagem redonda */
+}
+
+.menu-links .menu-item {
+    background-color: #B2BED7;
+    padding: 5px 10px; /* Ajusta o padding para caber o tamanho da letra */
+    border-radius: 5px; /* Arredonda as bordas */
+    color: #000; /* Cor do texto, pode ser ajustada conforme desejado */
+    text-decoration: none;
+    margin-left: 8px; /* Espaçamento entre os links */
+    font-size: 14px; /* Ajuste o tamanho da fonte conforme necessário */
+}
+
+.menu-item:hover {
+    background-color: #9CA8C1; /* Cor de fundo ao passar o mouse */
+}
+.navbar-brand {
+    margin-left: 15px; /* Espaçamento entre os links do menu */
+}

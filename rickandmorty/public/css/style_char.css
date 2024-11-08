@@ -90,3 +90,19 @@ body{
 .save-button:hover {
     background-color: #004494; /* Cor ao passar o mouse */
 }
+
+/* Cor dos status*/
+.status-alive {
+    color: green;
+    font-weight: bold;
+}
+
+.status-dead {
+    color: red;
+    font-weight: bold;
+}
+
+.status-unknown {
+    color: gray;
+    font-style: italic;
+}

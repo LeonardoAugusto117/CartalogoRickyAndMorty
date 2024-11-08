@@ -19,8 +19,8 @@
     </script>
 
     
-    <nav class="navbar navbar-expand-lg " style="background-color: #38589D;">
-        <div class="container">
+    <nav style="background-color: #38589D;">
+        <div class="navbar navbar-expand-lg">
             <!-- Logo -->
             <a class="navbar-brand" href='/'>
                 <img src="{{ asset('img/rick.jpg') }}" alt="Logo" class="rounded-circle img-logo">
@@ -33,25 +33,24 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <div class="ms-auto menu-links">
                     <a class="navbar-brand menu-item" href="/">Home</a>
-                    <a class="navbar-brand menu-item" href="/">Personagens</a>
-                    <a class="navbar-brand menu-item" href="#">Sobre</a>
-                    <a class="navbar-brand menu-item" href="#">Login / Cadastro</a>
+                    <a class="navbar-brand menu-item" href="/persona">Personagens</a>
+                    <a class="navbar-brand menu-item" href="/sobre">Sobre</a>
+                    <a class="navbar-brand menu-item" href="/acess">Login / Cadastro</a>
                 </div>
             </div>
         </div>
     </nav>
-    
     <section class="container " >
         <div class="container-quadrado">
             <div class="row">
                 <div class="col-image">
-                    <img src="{{ asset('img/rick.jpg') }}" alt="Logo" class="img-position">
+                    <img src="{{ $character['image'] }}" class="card-img-top" alt="{{ $character['name'] }}">
                 </div>
                 <div class="col-data">
-                    <h3>Nome do Personagem</h3>
-                    <p>Status: Vivo</p>
-                    <p>Espécie: Humano</p>
-                    <p>Gênero: Masculino</p>
+                    <h3>Nome do Personagem: <span>{{ $character['name'] }} </span></h3>
+                    <p>Status: <span class="status-alive"  class="status-dead" class="status-unknown"> {{ $character['status'] }}</span></p>
+                    <p>Espécie: <span > {{ $character['species'] }}</span></p>
+                    <p>Gênero: <span > {{ $character['gender'] }}</span></p>
                 </div>
             </div>
             <button class="save-button">Salvar</button>
